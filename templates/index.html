@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mana mājas lapa</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+
+<body>
+    <header>
+      <nav class="topnav">
+        <a href="index.html" class="active">Sākums</a>
+        <a href="kontakti.html" onclick="atjaunotIetvaru(this); return false;">Kontakti</a>
+        <a href="par mani.html"onclick="atjaunotIetvaru(this); return false;">Par mani</a>
+        <a href="portfolio.html"onclick="atjaunotIetvaru(this); return false;">Portfolio</a>
+      </nav>  
+
+</header>
+
+<aside class="sidebar">
+      <a href="#saturs">Saturs</a>
+      <a href="#tabula">Tabula</a>
+      <a href="#video">Video</a> 
+      <a href="#audio">Audio</a>
+</aside>
+  
+<main id="lapas_saturs">
+  
+  <h1>Sveika pasaule!</h1>
+  <p>Tests vai iet krāsa</p>
+      <section id="saturs">
+         <p> Šis ir mans pirmais HTML!</p>
+
+<main id="lapas_saturs">
+
+
+        <div id="image">
+        <img src="5 Typographic Portrait Artists That Will Inspire You  _ Blog _ Domestika.jpg" width="200px">
+        </div>
+      
+        
+        <ol type="A" start="3">
+        <li>Pirmais</li>
+        <li>Otrais</li>
+        <li>Trešais</li>
+      </ol>
+      <ul type="A" start="3">
+        <li>Pirmais</li>
+        <li>Otrais</li>
+        <li>Trešais</li>
+      </ul>
+
+      <ol type="A">
+        <li>Pirmais</li>
+        <li>Otrais</li>
+        <li>Trešais</li>
+        <ul>
+          <li>Apakš elements1</li>
+          <li>Apakš elements2</li>
+
+        </ul>
+      </ol>
+      
+<section id="tabula">
+      <table border="1">
+        <tr>
+          <td>1.rinda 1.kolonna</td>
+          <td>1.rinda 2.kolonna</td>
+        </tr>
+        <tr>
+          <td>2. rinda 1. kolonna</td>
+          <td>2. rinda 2. kolonna</td>
+        </tr>
+        <tr>
+          <td>3. rinda 1. kolonna</td>
+          <td>3. rinda 2. kolonna</td>
+        </tr>
+        <tr>
+          <td>4. rinda 1. kolonna</td>
+          <td>4. rinda 2. kolonna</td>
+        </tr>
+      </table>
+  <br>
+  <br>
+
+  <section id="tabula">
+      <table border="1" align="center" cellpadding="10px">
+          <thead>
+              <tr>
+                  <th rowspan="3">DIENA</th>
+                  <th colspan="3">KURSI</th>
+              </tr>
+              <tr>
+                  <th colspan="2">Grafiks</th>
+                  <th rowspan="2">Tēma</th>
+              </tr>
+              <tr>
+                  <th>Sākums</th>
+                  <th>Beigas</th>
+              </tr>
+          </thead>
+
+          <tbody>
+              <tr>
+                  <td rowspan="2">Pirmdiena</td>
+                  <td rowspan="2">8:00 </td>
+                  <td rowspan="2">17:00</td>
+                  <td>HTML pamati. Github – versionēšanas rīks. </td>
+              </tr>
+              <tr>
+                  <td>HTML uzbūve. Biežāk izmantotie tag</td>
+              </tr>
+              <tr>
+                  <td rowspan="4">Otrdiena</td>
+                  <td>8:00 </td>
+                  <td>11:00 </td>
+                  <td rowspan="2">HTML pamati. Ievades, izvades lauki. CSS struktūra un pieraksts. </td>
+              </tr>
+              <tr>
+                  <td rowspan="2">11:00 </td>
+                  <td rowspan="2">14:00 </td>
+              </tr>
+              <tr>
+                  <td rowspan="2">HTML sasaiste ar ārējo CSS</td>
+              </tr>
+              <tr>
+                  <td>14:00 </td>
+                  <td>17:00 </td>
+              </tr>
+              <tr>
+                  <td>Trešdiena</td>
+                  <td>8:00 </td>
+                  <td>13:00 </td>
+                  <td>CSS pamati. CSS uzbūve. CSS selektori</td>
+              </tr>
+
+          </tbody>
+      </table>
+    <br>
+    <br>
+    <br>
+    
+  
+<section id="video">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/nWqnqmX63WA?si=7b4giGhP4KOuNTKL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <br>
+  <br>
+  <section id="audio">
+    <audio controls>
+      <source src="Abhi The Nomad - Letter For God.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+ 
+
+  
+</section>
+      <a href="kontakti.html">Sākums</a>
+</section>
+
+  
+<section id="canva">
+  <canvas id="zimejums" width="500" height="400"></canvas><br>
+     
+</section>
+  <button onclick="taisnsturis()">Parādīt taisnstūri</button>
+  <button onclick="aplis()">Parādīt apli</button>
+  <button onclick="linija()">Parādīt līniju</button>
+
+    <section id="saturs">
+      <label for="vards">Ievadi savu vārdu</label>
+     
+      <input type="text" id="vards" name="vards">
+      <label for="a">Ievadi a vērtību</label>
+      <input type="number" id="a">
+      <label for="b">Ievadi b vērtību</label>
+      <input type="number" id="b">
+      <button type="button" class="btn btn-danger" onclick="aprekins()">Aprēķināt</button>
+      <p id="rezultats">Šeit būs rezultāts pēc aprēķina</p>
+    </section>
+
+
+    <div id="geeks">
+        <div class="gfg">GeeksforGeeks</div>
+        <div>A computer science portal for geeks</div>
+    </div>
+    
+<footer>&copy;Mana firma</footer>
+<script src="script.js"></script>
+
+
+</body>
+</html>
