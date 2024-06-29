@@ -1,6 +1,11 @@
+function atjaunotIetvaru(which) {
+  document.getElementById("lapas_saturs").innerHTML = '<'+'object id="lapas" type="text/html" data="'+which.href+'"></'+'object>';
+}
+
+
 window.onload = function() {
   zimetuzcanva();
-  var navLinks = document.querySelectorAll('.topnav a');
+    var navLinks = document.querySelectorAll('.topnav a');
     navLinks.forEach(function(link) {
       link.addEventListener('click', function() {
         navLinks.forEach(function(link) {
@@ -11,9 +16,6 @@ window.onload = function() {
     });
   }
 
-function atjaunotIetvaru(which) {
-  document.getElementById("lapas_saturs").innerHTML = '<'+'object id="lapas" type="text/html" data="'+which.href+'"></'+'object>';
-}
 
 function zimetuzcanva() {
   var kanva  = document.getElementById("zimejums");
@@ -21,12 +23,14 @@ function zimetuzcanva() {
   konteksts.fillStyle = "blue";  
   konteksts.fillRect(20,20,150,100);
 }
+
 function taisnsturis() {
   var kanva  = document.getElementById("zimejums");
   var konteksts = kanva.getContext("2d");
   konteksts.strokeStyle = "red";
   konteksts.strokeRect(60,60,150,100);
 }
+
 function aplis() {
   var kanva  = document.getElementById("zimejums");
   var konteksts = kanva.getContext("2d");
@@ -38,6 +42,7 @@ function aplis() {
   konteksts.fill();
   konteksts.stroke();
 }
+
 function linija() {
   var kanva  = document.getElementById("zimejums");
   var konteksts = kanva.getContext("2d");
@@ -57,10 +62,12 @@ function aprekins() {
     alert("Lūdzu ievadiet derīgu vārdu!"); 
       return;
   }
+  
 if (pirmais === "" || otrais === "" || isNaN(pirmais) || isNaN(otrais)){
   alert("Ievadi skaitli");
   return;
 }
+  
 if (!Number. isInteger(pirmais) || !Number. isInteger(otrais)){
   alert("Ievadi veselu skaitli");
   return;

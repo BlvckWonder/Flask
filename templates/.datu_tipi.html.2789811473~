@@ -1,0 +1,12 @@
+{% extends "<pamati_sintakse.html" %}
+
+{% <block content %}
+ <h1>Datu tipi!</h1>  
+  <pre>
+    teksts = {{ teksts }}
+    skaitlis = {{ skaitlis }}
+    decimals = {{ decimals }}
+    
+  </pre>
+
+     {% endblock %}  
